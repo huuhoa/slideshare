@@ -9,8 +9,15 @@ The following python modules are required to install first
 * lxml
 * requests
 
-# Limitation
-Current version only runs on MacOSX because it need pdf joiner which is distributed with MacOSX
+
+# Install
+Clone GIT repository to local drive and execute setup.py
+
+``` bash
+$ git clone https://github.com/huuhoa/slideshare.git
+$ cd slideshare
+$ python setup.py install
+
 
 # Usage
 Append slideshare urls to runner.py to array all_urls, then from command line call 
@@ -19,3 +26,11 @@ Append slideshare urls to runner.py to array all_urls, then from command line ca
 $ python runner.py
 ```
 
+Or from command line
+
+``` bash
+$ python
+> import slideshare
+> slideshare.download("url-to-slide")
+
+```
